@@ -1,0 +1,35 @@
+.layout {
+  display: inline-block;
+}
+
+.info-panel {
+  display: flex;
+  margin-left: 16px;
+}
+
+.info-panel-item {
+  background: #dddddd;
+  border: 2px solid black;
+  border-bottom: none;
+  padding: 4px 10px;
+  font: 13px sans-serif;
+}
+
+.info-panel-item + .info-panel-item {
+  border-left: none;
+}
+
+@media (max-width: 480px) {
+  .info-panel-item {
+    font-size: 11px;
+    padding: 3px 6px;
+  }
+}
+
+.game {
+  border: 2px solid black;
+}
+
+#app canvas {
+  display: block;
+}
